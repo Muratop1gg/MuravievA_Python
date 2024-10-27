@@ -12,4 +12,7 @@ for month in range(1, months + 1):
 
 money_capital_needed = total_spend - salary * months
 
+if (money_capital_needed % 1 >= 0.5):
+    money_capital_needed += 1
+
 print(f"Подушка безопасности, чтобы протянуть {months} месяцев без долгов:", int(money_capital_needed))
